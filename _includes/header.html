@@ -1,9 +1,36 @@
 <header class="site-header">
 
   <div class="wrapper">
+    <div class="site-ribbon">
+		<a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
+    
+    <form id="nav-search" class="" method="GET" action="/search.php" facet-path="">
+        <div class="search-inner">
+            <div class="search-input-wrapper text-field-wrapper">
+            <input id="search-query" type="text" placeholder="Search for items" name="search_query" value="" autocomplete="off" autocorrect="off" autocapitalize="off" tabindex="1">
+            </div>
+            <div class="search-button-wrapper">
+                <button class="btn-primary" type="submit" value="Search">
+                    Search
+                </button>
+            </div>
+        </div>
+    </form>
+    
+    
+    
+    
+    
+    
+    
+  </div>
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
+<div class="navigation-ribbon">
+
+<div class="wrapper">
+	
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -23,5 +50,6 @@
     </nav>
 
   </div>
+</div>
 
 </header>
