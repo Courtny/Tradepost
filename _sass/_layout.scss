@@ -10,13 +10,15 @@
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+	display: block;
+	float: left;
+	width: 214px;
+	height: 50px;
     text-indent: -10000em;
-    background: url(#{$base-url}/img/tradepost-logo.svg);
+    background: url(#{$base-url}/img/tradepost-logo.svg), no-repeat top left;
+    background-size: 214px 50px;
+    margin-top: 15px;
+    margin-right: 30px
 }
 
 .navigation-ribbon {
@@ -274,7 +276,7 @@
 	    border-bottom-right-radius: 0;
 	    width: 190px;
 	    top: 50%;
-	    border: 1px solid $grey-color-light;
+	    border: 1px solid $grey-color;
 	    padding: 8px 10px;
 	    margin-left: 0;
 	    font-size: 14px;
