@@ -30,17 +30,17 @@
     
                 </li>
     
-                    <li class="register-link">
-                        <a id="register" class="" href="" title="Register">
-                            Register
-                        </a>
-                    </li>
+                <li class="register-link">
+                    <a id="register" class="" href="" title="Register">
+                        Register
+                    </a>
+                </li>
     
-                    <li class="sign-in-link">
-                        <a id="sign-in" class="" href="" title="Sign in">
-                            Sign in
-                        </a>
-                    </li>
+                <li class="sign-in-link">
+                    <a id="sign-in" class="" href="" title="Sign in">
+                        Sign in
+                    </a>
+                </li>
     
     
                 <li class="cart " data-sub-nav="cart">
@@ -78,7 +78,7 @@
       </a>
 
       <div class="trigger">
-        {% for page in site.pages %}
+        {% for page in site.pages | sort:"name" %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
